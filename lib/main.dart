@@ -4,7 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:todo_hive/bloc/todo_bloc.dart';
 import 'package:todo_hive/model/todo.dart';
 import 'package:todo_hive/repository/todo_repository.dart';
-import 'package:todo_hive/view/todo_screen.dart';
+import 'package:todo_hive/view/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Todo App',
           theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.blue),
-          home: TodoScreen(),
+          home: SplashScreen(),
         ),
       ),
     );
